@@ -24,6 +24,15 @@ public static class BetterLinearSearch
     */
     public static int Search<T>(List<T> data, T target) where T : IComparable<T>
     {
-        return 0;
+        // loop through data, using i for index instead of foreach as to save on resources in comparison to using List.Find() later
+        // I don't actually know that that's more efficient in any sense, but it seems logical to me that it would be.
+        for (int i = 0; i < data.Count; i++)  {
+            // if the value is equal, return its index
+            if (data[i].CompareTo(target) == 0) {
+                return i;
+            }
+        }
+        // if no value is equal, return -1
+        return -1;
     }
 }
