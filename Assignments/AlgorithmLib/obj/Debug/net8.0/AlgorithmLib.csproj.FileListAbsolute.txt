@@ -1,0 +1,12 @@
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\bin\Debug\net8.0\AlgorithmLib.deps.json
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\bin\Debug\net8.0\AlgorithmLib.dll
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\bin\Debug\net8.0\AlgorithmLib.pdb
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.AssemblyInfoInputs.cache
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.AssemblyInfo.cs
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.csproj.CoreCompileInputs.cache
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.sourcelink.json
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.dll
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\refint\AlgorithmLib.dll
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.pdb
+C:\Users\tmanb\Code Projects\CSE381 - Algorithms and Complexity\cse381\Assignments\AlgorithmLib\obj\Debug\net8.0\ref\AlgorithmLib.dll
