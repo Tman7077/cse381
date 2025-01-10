@@ -6,6 +6,8 @@
 *  in the comments.  Run all tests in BinarySearchTest.cs to verify your code.
 */
 
+using System.Diagnostics;
+
 namespace AlgorithmLib;
 
 public static class BinarySearch
@@ -22,8 +24,35 @@ public static class BinarySearch
     */
     public static int Search<T>(List<T> data, T target) where T : IComparable<T>
     {
+        if (data.Count == 0)
+        {
+            return -1;
+        }
+
+        if (data.Count == 1)
+        {
+            return -1;
+        }
+
+        int first, last;
+
+        // List<T> sublist = new List<T>();
+        int midpoint = data.Count / 2;
+        if (midpoint.CompareTo(target) < 0) {
+            first = 0;
+            last = midpoint;
+            // sublist = data.Take(midpoint).ToList();
+        }
+        else
+        {
+            midpoint--;
+            first = midpoint;
+            last = data.Count - midpoint;
+            // sublist = data.GetRange(midpoint,data.Count-midpoint).Take(data.Count-midpoint).ToList();
+        }
+        return _Search(data, target, first, last);
         // Start the recursion
-        return _Search(data, target, 0, data.Count - 1);
+        // return _Search(data, target, 0, data.Count - 1);
     }
 
     /* Use Binary Search to recursively search for an item in a sublist.
@@ -40,7 +69,19 @@ public static class BinarySearch
     */
     public static int _Search<T>(List<T> data, T target, int first, int last) where T : IComparable<T>
     {
-        return 0;
+        return -1;
+        // if (!data[0].Equals(target))
+        // {
+        //     return 0;
+        // }
+        // else if (data[0].CompareTo(target)  < 0)
+        // {
+        //     return -1;
+        // }
+        // else
+        // {
+        //     return 1;
+        // }
     }
 
 }
