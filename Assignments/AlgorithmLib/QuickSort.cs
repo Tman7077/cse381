@@ -36,6 +36,15 @@ public static class QuickSort
      */
     public static void _Sort<T>(List<T> data, int first, int last) where T : IComparable<T>
     {
+            if (first < last) // if the list contains more than one element
+            {
+                // pick a pivot with the partition function
+                int pivot = Partition(data, first, last);
+
+                // sort data to the left and right of the pivot
+                _Sort(data, first, pivot - 1);
+                _Sort(data, pivot + 1, last);
+            }
     }
     
     /* Partition a sublist by finding where a pivot belongs when sorted.  All
@@ -53,6 +62,28 @@ public static class QuickSort
      */
     public static int Partition<T>(List<T> data, int first, int last) where T : IComparable<T>
     {
-        return 0;
+        // pick pivot as the last element of data
+        T pivot = data[last];
+        // index of smaller element
+        int i = first - 1;
+
+        // loop through all (-1) elements of the sublist
+        for (int j = first; j < last; j++)
+        {
+            if (data[j].CompareTo(pivot) < 0)
+            {
+                // increment i, swap data[i] and data[j]
+                i++;
+                T temp = data[i];
+                data[i] = data[j];
+                data[j] = temp;
+            }
+        }
+        // place the pivot
+        T temp2 = data[i + 1];
+        data[i + 1] = data[last];
+        data[last] = temp2;
+        // return the index of the pivot
+        return i + 1;
     }
 }
